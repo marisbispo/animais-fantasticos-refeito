@@ -1,4 +1,4 @@
-import abreFaq from './modules/abreFaq.js';
+import AbreFaq from './modules/abreFaq.js';
 import imagemEtexto from './modules/imagemEtexto.js';
 import ScrollSuave from './modules/scrollSuave.js';
 import animacaoAoScroll from './modules/animacaoAoScroll.js';
@@ -13,8 +13,12 @@ import initFetchBitcoin from './modules/fetch-bitcoin.js';
 const scrollSuave = new ScrollSuave('[data-menu="suave"] [href^="#"]')
 scrollSuave.init();
 
+const accordion = new AbreFaq('[data-anime="accordion"] dt');
+accordion.init();
+
+
 imagemEtexto();
-abreFaq();
+
 animacaoAoScroll();
 initModal();
 initToolTip();
