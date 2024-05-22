@@ -2,7 +2,7 @@ import AbreFaq from './modules/abreFaq.js';
 import ImagemEtexto from './modules/imagemEtexto.js';
 import ScrollSuave from './modules/scrollSuave.js';
 import animacaoAoScroll from './modules/animacaoAoScroll.js';
-import initModal from './modules/modal.js';
+import Modal from './modules/modal.js';
 import initToolTip from './modules/tooltip.js';
 import initDropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
@@ -20,8 +20,10 @@ accordion.init();
 const tabNav = new ImagemEtexto('[data-tab="menu"] li', '[data-tab="content"] section');
 tabNav.init();
 
+const modal = new Modal('[data-modal="abrir"]', '[data-modal="fechar"]', '[data-modal="container"]');
+modal.init();
+
 animacaoAoScroll();
-initModal();
 initToolTip();
 initDropdownMenu();
 initMenuMobile();
