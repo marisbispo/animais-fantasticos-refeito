@@ -1,5 +1,5 @@
 import AbreFaq from './modules/abreFaq.js';
-import imagemEtexto from './modules/imagemEtexto.js';
+import ImagemEtexto from './modules/imagemEtexto.js';
 import ScrollSuave from './modules/scrollSuave.js';
 import animacaoAoScroll from './modules/animacaoAoScroll.js';
 import initModal from './modules/modal.js';
@@ -17,7 +17,8 @@ const accordion = new AbreFaq('[data-anime="accordion"] dt');
 accordion.init();
 
 
-imagemEtexto();
+const tabNav = new ImagemEtexto('[data-tab="menu"] li', '[data-tab="content"] section');
+tabNav.init();
 
 animacaoAoScroll();
 initModal();
