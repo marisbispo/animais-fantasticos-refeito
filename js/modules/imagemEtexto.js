@@ -28,6 +28,7 @@ init(){
     this.mostraTexto(0);
     this.addTabNavEvent();
   }
+  return this;
 }
 
 }
