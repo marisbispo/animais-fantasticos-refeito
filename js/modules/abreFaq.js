@@ -27,6 +27,7 @@ abrePergunta(pergunta){
       this.abrePergunta(this.listaPerguntas[0])
       this.addAccordionEvent();
     }
+    return this;
   }
   
 }
