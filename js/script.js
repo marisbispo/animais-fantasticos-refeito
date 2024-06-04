@@ -3,7 +3,7 @@ import ImagemEtexto from './modules/imagemEtexto.js';
 import ScrollSuave from './modules/scrollSuave.js';
 import animacaoAoScroll from './modules/animacaoAoScroll.js';
 import Modal from './modules/modal.js';
-import initToolTip from './modules/tooltip.js';
+import ToolTip from './modules/tooltips.js';
 import initDropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import initFuncionamento from './modules/funcionamento.js';
@@ -23,8 +23,11 @@ tabNav.init();
 const modal = new Modal('[data-modal="abrir"]', '[data-modal="fechar"]', '[data-modal="container"]');
 modal.init();
 
+const tooltip = new ToolTip('[data-tooltip]');
+tooltip.init();
+
 animacaoAoScroll();
-initToolTip();
+
 initDropdownMenu();
 initMenuMobile();
 initFuncionamento();
