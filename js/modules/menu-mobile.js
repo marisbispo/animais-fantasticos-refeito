@@ -12,7 +12,8 @@ export default class MenuMobile {
     if (events === undefined) this.events = ['touchstart', 'click'];
     else this.events = events;
 
-    //quando tem um evento de callback tem que dar o bind
+    // quando tem um evento de callback 
+    // tem que dar o bind
     this.openMenu = this.openMenu.bind(this);
   }
 
